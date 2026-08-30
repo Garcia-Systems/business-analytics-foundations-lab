@@ -1,0 +1,33 @@
+# Python environments and local configuration
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+
+# Python build and cache files
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Test and tool caches
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Jupyter transient files
+.ipynb_checkpoints/
+
+# Generated figures (keep the directory itself)
+figures/*
+!figures/.gitkeep
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+
