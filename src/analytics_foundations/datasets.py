@@ -34,3 +34,10 @@ def load_chapter_07_data() -> pd.DataFrame:
 
     path = PROJECT_ROOT / "data" / "raw" / "chapter-07-cafe-customers.csv"
     return pd.read_csv(path)
+
+
+def load_chapter_10_data() -> pd.DataFrame:
+    """Load clean transaction-grain restaurant data for Chapter 10."""
+
+    path = PROJECT_ROOT / "data" / "raw" / "chapter-10-restaurant-transactions.csv"
+    return pd.read_csv(path)

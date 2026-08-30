@@ -13,6 +13,7 @@ from analytics_foundations.chapter_06 import run as run_chapter_06
 from analytics_foundations.chapter_07 import run as run_chapter_07
 from analytics_foundations.chapter_08 import run as run_chapter_08
 from analytics_foundations.chapter_09 import run as run_chapter_09
+from analytics_foundations.chapter_10 import run as run_chapter_10
 
 
 @dataclass(frozen=True)
@@ -57,6 +58,9 @@ CHAPTERS: dict[str, Chapter] = {
     ),
     "chapter-09": Chapter(
         "chapter-09", "Arrays & Vectorized Thinking", available=True, run=run_chapter_09
+    ),
+    "chapter-10": Chapter(
+        "chapter-10", "Tables & DataFrames", available=True, run=run_chapter_10
     ),
 }
 

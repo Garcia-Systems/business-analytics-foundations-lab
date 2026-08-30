@@ -31,7 +31,7 @@ Python 3.12+ is the primary computational environment. R will be introduced deli
 ### Part II — Python Becomes an Analytics Tool
 
 9. **Arrays & Vectorized Thinking — implemented**
-10. Tables & DataFrames
+10. **Tables & DataFrames — implemented**
 11. Messy Data
 12. Transform, Group & Join
 13. Seeing Data
@@ -72,7 +72,7 @@ Python 3.12+ is the primary computational environment. R will be introduced deli
 
 ### Capstone — James River Analytics Challenge
 
-Chapters 10–35 and the capstone are **planned**. The planned capstone will integrate business framing, data preparation, quantitative reasoning, computation, visualization, and communication in one coherent analytics challenge.
+Chapters 11–35 and the capstone are **planned**. The planned capstone will integrate business framing, data preparation, quantitative reasoning, computation, visualization, and communication in one coherent analytics challenge.
 
 ## Repository layout
 
@@ -167,6 +167,12 @@ Chapter 9 turns restaurant matrices into vectorized metrics, masks, axis aggrega
 python3 -m analytics_foundations chapter-09
 ```
 
+Chapter 10 uses labeled restaurant transactions to select, filter, derive, group, and preserve business meaning:
+
+```bash
+python3 -m analytics_foundations chapter-10
+```
+
 The Chapter 0 experiment loads version-controlled data and writes
 `figures/chapter-00-revenue-by-date.png`. Chapter 1 writes separate revenue/cost and profit
-figures. Chapter 2 writes linear-versus-exponential and repeated-multiplication figures. Chapter 3 writes revenue-by-category and category-contribution figures. Chapter 4 writes average-rate, secant-to-tangent, and profit-versus-marginal-profit figures. Chapter 5 writes accumulation, Riemann-rectangle, refinement, trapezoid, Simpson, and signed-accumulation figures. Chapter 6 writes customer-point, distance, and feature-scale figures. Chapter 7 writes table-to-matrix and weighted-score figures. Chapter 8 writes unique, dependent, inconsistent-system, and least-squares figures. Chapter 9 writes revenue-matrix, location-total, and target-deviation figures. Future planned experiments will use the same `chapter-NN` command convention.
+figures. Chapter 2 writes linear-versus-exponential and repeated-multiplication figures. Chapter 3 writes revenue-by-category and category-contribution figures. Chapter 4 writes average-rate, secant-to-tangent, and profit-versus-marginal-profit figures. Chapter 5 writes accumulation, Riemann-rectangle, refinement, trapezoid, Simpson, and signed-accumulation figures. Chapter 6 writes customer-point, distance, and feature-scale figures. Chapter 7 writes table-to-matrix and weighted-score figures. Chapter 8 writes unique, dependent, inconsistent-system, and least-squares figures. Chapter 9 writes revenue-matrix, location-total, and target-deviation figures. Chapter 10 writes category, location, and daily-revenue figures. Future planned experiments will use the same `chapter-NN` command convention.
