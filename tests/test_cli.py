@@ -68,3 +68,28 @@ def test_chapter_one_executes(monkeypatch: pytest.MonkeyPatch) -> None:
     )
     assert main(["chapter-01"]) == 0
     assert called
+
+
+def test_registry_recognizes_available_chapter_two() -> None:
+    chapter = get_chapter("chapter-02")
+    assert chapter is not None
+    assert chapter.title == "Exponents, Logs & Growth"
+    assert chapter.available is True
+    assert chapter.run is not None
+
+
+def test_chapter_two_executes(monkeypatch: pytest.MonkeyPatch) -> None:
+    called = False
+
+    def fake_run() -> int:
+        nonlocal called
+        called = True
+        return 0
+
+    monkeypatch.setitem(
+        CHAPTERS,
+        "chapter-02",
+        Chapter("chapter-02", "Exponents, Logs & Growth", True, fake_run),
+    )
+    assert main(["chapter-02"]) == 0
+    assert called
