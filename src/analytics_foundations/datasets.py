@@ -20,3 +20,10 @@ def load_chapter_03_data() -> pd.DataFrame:
 
     path = PROJECT_ROOT / "data" / "raw" / "chapter-03-cafe-transactions.csv"
     return pd.read_csv(path)
+
+
+def load_chapter_06_data() -> pd.DataFrame:
+    """Load the fictional customer feature data used in Chapter 6."""
+
+    path = PROJECT_ROOT / "data" / "raw" / "chapter-06-cafe-customers.csv"
+    return pd.read_csv(path)

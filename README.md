@@ -24,7 +24,7 @@ Python 3.12+ is the primary computational environment. R will be introduced deli
 3. **Summation & Aggregation — implemented**
 4. **Change & Derivatives — implemented**
 5. **Accumulation & Integrals — implemented**
-6. Vectors: Data Becomes Geometry
+6. **Vectors: Data Becomes Geometry — implemented**
 7. Matrices: Data Becomes Structure
 8. Linear Algebra for Models
 
@@ -72,7 +72,7 @@ Python 3.12+ is the primary computational environment. R will be introduced deli
 
 ### Capstone — James River Analytics Challenge
 
-Chapters 6–35 and the capstone are **planned**. The planned capstone will integrate business framing, data preparation, quantitative reasoning, computation, visualization, and communication in one coherent analytics challenge.
+Chapters 7–35 and the capstone are **planned**. The planned capstone will integrate business framing, data preparation, quantitative reasoning, computation, visualization, and communication in one coherent analytics challenge.
 
 ## Repository layout
 
@@ -143,6 +143,12 @@ Chapter 5 builds accumulated totals from rates with Riemann sums, numerical inte
 python3 -m analytics_foundations chapter-05
 ```
 
+Chapter 6 turns customer feature rows into vectors and uses geometry for comparison and weighted combinations:
+
+```bash
+python3 -m analytics_foundations chapter-06
+```
+
 The Chapter 0 experiment loads version-controlled data and writes
 `figures/chapter-00-revenue-by-date.png`. Chapter 1 writes separate revenue/cost and profit
-figures. Chapter 2 writes linear-versus-exponential and repeated-multiplication figures. Chapter 3 writes revenue-by-category and category-contribution figures. Chapter 4 writes average-rate, secant-to-tangent, and profit-versus-marginal-profit figures. Chapter 5 writes accumulation, Riemann-rectangle, refinement, trapezoid, Simpson, and signed-accumulation figures. Future planned experiments will use the same `chapter-NN` command convention.
+figures. Chapter 2 writes linear-versus-exponential and repeated-multiplication figures. Chapter 3 writes revenue-by-category and category-contribution figures. Chapter 4 writes average-rate, secant-to-tangent, and profit-versus-marginal-profit figures. Chapter 5 writes accumulation, Riemann-rectangle, refinement, trapezoid, Simpson, and signed-accumulation figures. Chapter 6 writes customer-point, distance, and feature-scale figures. Future planned experiments will use the same `chapter-NN` command convention.
