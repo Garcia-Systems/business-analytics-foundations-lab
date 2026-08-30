@@ -1,0 +1,17 @@
+row_identifier,issue,column,action,reason
+T020,exact duplicate,all,EXCLUDE,identical repeated observation
+T032,conflicting identifier,transaction_id,EXCLUDE,requires source-system investigation
+T008,missing reconstructable value,unit_price,CORRECT,gross_revenue / quantity under stated business rule
+T014,missing noncritical category,customer_type,IMPUTE,preserve observation without inventing membership
+T004,category variant,category,STANDARDIZE,format normalization or approved Drinks mapping
+T006,category variant,category,STANDARDIZE,format normalization or approved Drinks mapping
+T021,category variant,category,STANDARDIZE,format normalization or approved Drinks mapping
+T007,invalid critical field,validation flags,EXCLUDE,cannot establish valid analytical observation
+T009,invalid critical field,validation flags,EXCLUDE,cannot establish valid analytical observation
+T010,invalid critical field,validation flags,EXCLUDE,cannot establish valid analytical observation
+T011,invalid critical field,validation flags,EXCLUDE,cannot establish valid analytical observation
+T012,invalid critical field,validation flags,EXCLUDE,cannot establish valid analytical observation
+T013,invalid critical field,validation flags,EXCLUDE,cannot establish valid analytical observation
+T015,invalid critical field,validation flags,EXCLUDE,cannot establish valid analytical observation
+T016,invalid critical field,validation flags,EXCLUDE,cannot establish valid analytical observation
+T027,extreme revenue candidate,net_revenue,RETAIN,corroborated catering order; unusual is not invalid
