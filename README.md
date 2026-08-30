@@ -22,7 +22,7 @@ Python 3.12+ is the primary computational environment. R will be introduced deli
 1. **Functions Become Models — implemented**
 2. **Exponents, Logs & Growth — implemented**
 3. **Summation & Aggregation — implemented**
-4. Change & Derivatives
+4. **Change & Derivatives — implemented**
 5. Accumulation & Integrals
 6. Vectors: Data Becomes Geometry
 7. Matrices: Data Becomes Structure
@@ -72,7 +72,7 @@ Python 3.12+ is the primary computational environment. R will be introduced deli
 
 ### Capstone — James River Analytics Challenge
 
-Chapters 4–35 and the capstone are **planned**. The planned capstone will integrate business framing, data preparation, quantitative reasoning, computation, visualization, and communication in one coherent analytics challenge.
+Chapters 5–35 and the capstone are **planned**. The planned capstone will integrate business framing, data preparation, quantitative reasoning, computation, visualization, and communication in one coherent analytics challenge.
 
 ## Repository layout
 
@@ -131,6 +131,12 @@ Chapter 3 translates summation notation into transaction, NumPy, and pandas aggr
 python3 -m analytics_foundations chapter-03
 ```
 
+Chapter 4 develops derivatives from shrinking average rates of change and interprets marginal business effects:
+
+```bash
+python3 -m analytics_foundations chapter-04
+```
+
 The Chapter 0 experiment loads version-controlled data and writes
 `figures/chapter-00-revenue-by-date.png`. Chapter 1 writes separate revenue/cost and profit
-figures. Chapter 2 writes linear-versus-exponential and repeated-multiplication figures. Chapter 3 writes revenue-by-category and category-contribution figures. Future planned experiments will use the same `chapter-NN` command convention.
+figures. Chapter 2 writes linear-versus-exponential and repeated-multiplication figures. Chapter 3 writes revenue-by-category and category-contribution figures. Chapter 4 writes average-rate, secant-to-tangent, and profit-versus-marginal-profit figures. Future planned experiments will use the same `chapter-NN` command convention.
