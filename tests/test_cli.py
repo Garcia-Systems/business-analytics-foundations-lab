@@ -2,7 +2,7 @@
 
 import pytest
 
-from analytics_foundations.chapters import get_chapter
+from analytics_foundations.chapters import CHAPTERS, Chapter, get_chapter
 from analytics_foundations.cli import main
 
 
@@ -20,18 +20,26 @@ def test_invalid_chapter_fails_cleanly(capsys: pytest.CaptureFixture[str]) -> No
     assert "invalid choice" in capsys.readouterr().err
 
 
-def test_registry_recognizes_chapter_zero_placeholder() -> None:
+def test_registry_recognizes_available_chapter_zero() -> None:
     chapter = get_chapter("chapter-00")
     assert chapter is not None
     assert chapter.title == "The Analytics Laboratory"
-    assert chapter.available is False
+    assert chapter.available is True
+    assert chapter.run is not None
 
 
-def test_placeholder_exits_with_explanation(
-    capsys: pytest.CaptureFixture[str],
-) -> None:
-    with pytest.raises(SystemExit) as error:
-        main(["chapter-00"])
-    assert error.value.code == 2
-    assert "placeholder" in capsys.readouterr().err
+def test_chapter_zero_executes(monkeypatch: pytest.MonkeyPatch) -> None:
+    called = False
 
+    def fake_run() -> int:
+        nonlocal called
+        called = True
+        return 0
+
+    monkeypatch.setitem(
+        CHAPTERS,
+        "chapter-00",
+        Chapter("chapter-00", "The Analytics Laboratory", True, fake_run),
+    )
+    assert main(["chapter-00"]) == 0
+    assert called
