@@ -4,6 +4,7 @@ from dataclasses import dataclass
 from collections.abc import Callable
 
 from analytics_foundations.chapter_00 import run as run_chapter_00
+from analytics_foundations.chapter_01 import run as run_chapter_01
 
 
 @dataclass(frozen=True)
@@ -21,6 +22,9 @@ class Chapter:
 CHAPTERS: dict[str, Chapter] = {
     "chapter-00": Chapter(
         "chapter-00", "The Analytics Laboratory", available=True, run=run_chapter_00
+    ),
+    "chapter-01": Chapter(
+        "chapter-01", "Functions Become Models", available=True, run=run_chapter_01
     ),
 }
 

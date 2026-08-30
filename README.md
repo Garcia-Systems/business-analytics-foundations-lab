@@ -19,7 +19,7 @@ Python 3.12+ is the primary computational environment. R will be introduced deli
 ### Part I — Mathematical Language of Analytics
 
 0. **The Analytics Laboratory — implemented**
-1. Functions Become Models
+1. **Functions Become Models — implemented**
 2. Exponents, Logs & Growth
 3. Summation & Aggregation
 4. Change & Derivatives
@@ -72,7 +72,7 @@ Python 3.12+ is the primary computational environment. R will be introduced deli
 
 ### Capstone — James River Analytics Challenge
 
-Chapters 1–35 and the capstone are **planned**. The planned capstone will integrate business framing, data preparation, quantitative reasoning, computation, visualization, and communication in one coherent analytics challenge.
+Chapters 2–35 and the capstone are **planned**. The planned capstone will integrate business framing, data preparation, quantitative reasoning, computation, visualization, and communication in one coherent analytics challenge.
 
 ## Repository layout
 
@@ -113,6 +113,12 @@ Chapter 0 is implemented. Run its complete cafe analytics experiment with:
 python3 -m analytics_foundations chapter-00
 ```
 
-The experiment loads the version-controlled data, calculates and compares business metrics,
-and writes `figures/chapter-00-revenue-by-date.png`. Future planned experiments will use the
-same `chapter-NN` command convention.
+Chapter 1 is also implemented. Run its revenue, cost, profit, and break-even model with:
+
+```bash
+python3 -m analytics_foundations chapter-01
+```
+
+The Chapter 0 experiment loads version-controlled data and writes
+`figures/chapter-00-revenue-by-date.png`. Chapter 1 writes separate revenue/cost and profit
+figures. Future planned experiments will use the same `chapter-NN` command convention.
