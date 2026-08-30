@@ -1,0 +1,4 @@
+location_id,location_name,city,seat_capacity,region
+L01,Harbor House,Norfolk,72,Coastal
+L02,Market Table,Richmond,58,Central
+L03,Garden Kitchen,Williamsburg,64,Peninsula
