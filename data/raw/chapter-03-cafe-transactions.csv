@@ -1,0 +1,16 @@
+transaction_id,day,category,quantity,unit_price
+T001,Monday,Food,3,10.00
+T002,Monday,Beverage,10,3.00
+T003,Monday,Dessert,1,15.00
+T004,Tuesday,Food,4,11.00
+T005,Tuesday,Beverage,8,3.50
+T006,Tuesday,Dessert,2,14.00
+T007,Wednesday,Food,2,12.00
+T008,Wednesday,Beverage,12,3.00
+T009,Wednesday,Dessert,1,16.00
+T010,Thursday,Food,5,10.00
+T011,Thursday,Beverage,9,4.00
+T012,Thursday,Dessert,2,15.00
+T013,Friday,Food,4,12.00
+T014,Friday,Beverage,11,3.50
+T015,Friday,Food,3,11.00

@@ -21,7 +21,7 @@ Python 3.12+ is the primary computational environment. R will be introduced deli
 0. **The Analytics Laboratory — implemented**
 1. **Functions Become Models — implemented**
 2. **Exponents, Logs & Growth — implemented**
-3. Summation & Aggregation
+3. **Summation & Aggregation — implemented**
 4. Change & Derivatives
 5. Accumulation & Integrals
 6. Vectors: Data Becomes Geometry
@@ -72,7 +72,7 @@ Python 3.12+ is the primary computational environment. R will be introduced deli
 
 ### Capstone — James River Analytics Challenge
 
-Chapters 3–35 and the capstone are **planned**. The planned capstone will integrate business framing, data preparation, quantitative reasoning, computation, visualization, and communication in one coherent analytics challenge.
+Chapters 4–35 and the capstone are **planned**. The planned capstone will integrate business framing, data preparation, quantitative reasoning, computation, visualization, and communication in one coherent analytics challenge.
 
 ## Repository layout
 
@@ -125,6 +125,12 @@ Chapter 2 compares additive and compound customer growth and uses logarithms to 
 python3 -m analytics_foundations chapter-02
 ```
 
+Chapter 3 translates summation notation into transaction, NumPy, and pandas aggregations:
+
+```bash
+python3 -m analytics_foundations chapter-03
+```
+
 The Chapter 0 experiment loads version-controlled data and writes
 `figures/chapter-00-revenue-by-date.png`. Chapter 1 writes separate revenue/cost and profit
-figures. Chapter 2 writes linear-versus-exponential and repeated-multiplication figures. Future planned experiments will use the same `chapter-NN` command convention.
+figures. Chapter 2 writes linear-versus-exponential and repeated-multiplication figures. Chapter 3 writes revenue-by-category and category-contribution figures. Future planned experiments will use the same `chapter-NN` command convention.
