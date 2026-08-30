@@ -58,3 +58,10 @@ def load_chapter_12_data() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
     locations = pd.read_csv(raw / "chapter-12-locations.csv")
     labor_daily = pd.read_csv(raw / "chapter-12-labor-daily.csv", parse_dates=["date"])
     return transactions, locations, labor_daily
+
+
+def load_chapter_13_data() -> pd.DataFrame:
+    """Load the analysis-ready location-day observations for Chapter 13."""
+
+    path = PROJECT_ROOT / "data" / "processed" / "chapter-13-location-day.csv"
+    return pd.read_csv(path, parse_dates=["date"], dtype={"promotion_active": "boolean"})
