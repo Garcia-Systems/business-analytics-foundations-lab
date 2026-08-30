@@ -41,3 +41,10 @@ def load_chapter_10_data() -> pd.DataFrame:
 
     path = PROJECT_ROOT / "data" / "raw" / "chapter-10-restaurant-transactions.csv"
     return pd.read_csv(path)
+
+
+def load_chapter_11_data() -> pd.DataFrame:
+    """Load raw, deliberately messy transaction data without parsing it."""
+
+    path = PROJECT_ROOT / "data" / "raw" / "chapter-11-messy-transactions.csv"
+    return pd.read_csv(path)
