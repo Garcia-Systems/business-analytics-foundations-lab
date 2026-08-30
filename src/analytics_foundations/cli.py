@@ -41,5 +41,6 @@ def main(argv: Sequence[str] | None = None) -> int:
             f"{chapter.slug} ({chapter.title}) is registered as a placeholder; "
             "its experiment is not implemented yet.\n",
         )
-    return 0
-
+    if chapter.run is None:  # pragma: no cover - registry invariant
+        parser.error(f"{chapter.slug} has no experiment")
+    return chapter.run()
