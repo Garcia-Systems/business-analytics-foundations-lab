@@ -48,3 +48,13 @@ def load_chapter_11_data() -> pd.DataFrame:
 
     path = PROJECT_ROOT / "data" / "raw" / "chapter-11-messy-transactions.csv"
     return pd.read_csv(path)
+
+
+def load_chapter_12_data() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
+    """Load transaction-, location-, and location-day-grain Chapter 12 tables."""
+
+    raw = PROJECT_ROOT / "data" / "raw"
+    transactions = pd.read_csv(raw / "chapter-12-transactions.csv", parse_dates=["date"])
+    locations = pd.read_csv(raw / "chapter-12-locations.csv")
+    labor_daily = pd.read_csv(raw / "chapter-12-labor-daily.csv", parse_dates=["date"])
+    return transactions, locations, labor_daily
