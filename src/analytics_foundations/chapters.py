@@ -18,6 +18,7 @@ from analytics_foundations.chapter_11 import run as run_chapter_11
 from analytics_foundations.chapter_12 import run as run_chapter_12
 from analytics_foundations.chapter_13 import run as run_chapter_13
 from analytics_foundations.chapter_14 import run as run_chapter_14
+from analytics_foundations.chapter_15 import run as run_chapter_15
 
 
 @dataclass(frozen=True)
@@ -77,6 +78,9 @@ CHAPTERS: dict[str, Chapter] = {
     ),
     "chapter-14": Chapter(
         "chapter-14", "Events & Probability", available=True, run=run_chapter_14
+    ),
+    "chapter-15": Chapter(
+        "chapter-15", "Conditional Probability", available=True, run=run_chapter_15
     ),
 }
 
