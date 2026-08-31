@@ -28,6 +28,7 @@ from analytics_foundations.chapter_21 import run as run_chapter_21
 from analytics_foundations.chapter_22 import run as run_chapter_22
 from analytics_foundations.chapter_23 import run as run_chapter_23
 from analytics_foundations.chapter_24 import run as run_chapter_24
+from analytics_foundations.chapter_25 import run as run_chapter_25
 
 
 @dataclass(frozen=True)
@@ -117,6 +118,9 @@ CHAPTERS: dict[str, Chapter] = {
     ),
     "chapter-24": Chapter(
         "chapter-24", "Hypothesis Testing", available=True, run=run_chapter_24
+    ),
+    "chapter-25": Chapter(
+        "chapter-25", "Comparing Groups", available=True, run=run_chapter_25
     ),
 }
 

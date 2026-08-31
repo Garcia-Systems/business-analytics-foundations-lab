@@ -52,7 +52,7 @@ Python 3.12+ is the primary computational environment. R will be introduced deli
 22. **Sampling Distributions — implemented**
 23. **Estimation & Confidence — implemented**
 24. **Hypothesis Testing — implemented**
-25. Comparing Groups
+25. **Comparing Groups — implemented**
 26. Regression as a Model
 27. Multiple Regression
 
@@ -72,7 +72,7 @@ Python 3.12+ is the primary computational environment. R will be introduced deli
 
 ### Capstone — James River Analytics Challenge
 
-Chapters 25–35 and the capstone are **planned**. Part III is complete, and Part IV — Statistics: Learning From Samples has begun. The planned capstone will integrate business framing, data preparation, quantitative reasoning, computation, visualization, and communication in one coherent analytics challenge.
+Chapters 26–35 and the capstone are **planned**. Part III is complete, and Part IV — Statistics: Learning From Samples has begun. The planned capstone will integrate business framing, data preparation, quantitative reasoning, computation, visualization, and communication in one coherent analytics challenge.
 
 ## Repository layout
 
@@ -259,4 +259,10 @@ Chapter 24 evaluates a one-population mean claim with a transparent t statistic,
 
 ```bash
 python3 -m analytics_foundations chapter-24
+```
+
+Chapter 25 compares James River Restaurant Group wait times with descriptive plots, Welch's two-sample procedure, a paired example, classical one-way ANOVA decomposition, effect size, and Tukey-adjusted follow-ups:
+
+```bash
+python3 -m analytics_foundations chapter-25
 ```
