@@ -36,7 +36,7 @@ Python 3.12+ is the primary computational environment. R will be introduced deli
 12. **Transform, Group & Join — implemented**
 13. **Seeing Data — implemented**
 
-### Part III — Probability as a Model of Uncertainty — begun
+### Part III — Probability as a Model of Uncertainty — complete
 
 14. **Events & Probability — implemented**
 15. **Conditional Probability — implemented**
@@ -44,7 +44,7 @@ Python 3.12+ is the primary computational environment. R will be introduced deli
 17. **Distributions — implemented**
 18. **Expected Value & Variability — implemented**
 19. **Covariance & Dependence — implemented**
-20. Monte Carlo Business
+20. **Monte Carlo Business — implemented**
 
 ### Part IV — Statistics: Learning From Samples
 
@@ -72,7 +72,7 @@ Python 3.12+ is the primary computational environment. R will be introduced deli
 
 ### Capstone — James River Analytics Challenge
 
-Chapters 20–35 and the capstone are **planned**. Part III — Probability as a Model of Uncertainty has begun. The planned capstone will integrate business framing, data preparation, quantitative reasoning, computation, visualization, and communication in one coherent analytics challenge.
+Chapters 21–35 and the capstone are **planned**. Part III — Probability as a Model of Uncertainty is complete. The planned capstone will integrate business framing, data preparation, quantitative reasoning, computation, visualization, and communication in one coherent analytics challenge.
 
 ## Repository layout
 
@@ -227,6 +227,12 @@ Chapter 19 develops paired observations, covariance, correlation, nonlinear depe
 python3 -m analytics_foundations chapter-19
 ```
 
+Chapter 20 combines uncertain restaurant demand, spending, conditional redemption, and demand-linked labor in a Monte Carlo strategy decision:
+
+```bash
+python3 -m analytics_foundations chapter-20
+```
+
 The Chapter 0 experiment loads version-controlled data and writes
 `figures/chapter-00-revenue-by-date.png`. Chapter 1 writes separate revenue/cost and profit
-figures. Chapter 2 writes linear-versus-exponential and repeated-multiplication figures. Chapter 3 writes revenue-by-category and category-contribution figures. Chapter 4 writes average-rate, secant-to-tangent, and profit-versus-marginal-profit figures. Chapter 5 writes accumulation, Riemann-rectangle, refinement, trapezoid, Simpson, and signed-accumulation figures. Chapter 6 writes customer-point, distance, and feature-scale figures. Chapter 7 writes table-to-matrix and weighted-score figures. Chapter 8 writes unique, dependent, inconsistent-system, and least-squares figures. Chapter 9 writes revenue-matrix, location-total, and target-deviation figures. Chapter 10 writes category, location, and daily-revenue figures. Chapter 11 writes missingness, category-standardization, outlier-candidate, and raw-versus-cleaned reconciliation figures. Chapter 12 writes grain-transformation, revenue-and-labor, and revenue-per-labor-hour figures. Chapter 13 writes distribution, group-comparison, relationship, time, grain-comparison, promotion, and axis-skepticism figures. Chapter 14 writes demand-probability, event, complement, union, intersection, and simulation-convergence figures. Chapter 15 writes restricted-denominator, contingency-table, probability-tree, and Bayes-count figures. Chapter 16 writes outcome-mapping, PMF, CDF, simulation-versus-model, and continuous-preview figures. Chapter 17 writes Bernoulli and Binomial PMFs, Uniform and Normal density areas, Normal parameter comparisons, and theory-versus-simulation figures. Chapter 18 writes weighted-balance, same-mean risk, deviation, cumulative-mean, and empirical-variance figures. Chapter 19 writes paired-deviation, relationship, correlation-matrix, outlier-influence, and nonlinear-dependence figures. Future planned experiments will use the same `chapter-NN` command convention.
+figures. Chapter 2 writes linear-versus-exponential and repeated-multiplication figures. Chapter 3 writes revenue-by-category and category-contribution figures. Chapter 4 writes average-rate, secant-to-tangent, and profit-versus-marginal-profit figures. Chapter 5 writes accumulation, Riemann-rectangle, refinement, trapezoid, Simpson, and signed-accumulation figures. Chapter 6 writes customer-point, distance, and feature-scale figures. Chapter 7 writes table-to-matrix and weighted-score figures. Chapter 8 writes unique, dependent, inconsistent-system, and least-squares figures. Chapter 9 writes revenue-matrix, location-total, and target-deviation figures. Chapter 10 writes category, location, and daily-revenue figures. Chapter 11 writes missingness, category-standardization, outlier-candidate, and raw-versus-cleaned reconciliation figures. Chapter 12 writes grain-transformation, revenue-and-labor, and revenue-per-labor-hour figures. Chapter 13 writes distribution, group-comparison, relationship, time, grain-comparison, promotion, and axis-skepticism figures. Chapter 14 writes demand-probability, event, complement, union, intersection, and simulation-convergence figures. Chapter 15 writes restricted-denominator, contingency-table, probability-tree, and Bayes-count figures. Chapter 16 writes outcome-mapping, PMF, CDF, simulation-versus-model, and continuous-preview figures. Chapter 17 writes Bernoulli and Binomial PMFs, Uniform and Normal density areas, Normal parameter comparisons, and theory-versus-simulation figures. Chapter 18 writes weighted-balance, same-mean risk, deviation, cumulative-mean, and empirical-variance figures. Chapter 19 writes paired-deviation, relationship, correlation-matrix, outlier-influence, and nonlinear-dependence figures. Chapter 20 writes simulation-pipeline, profit-distribution, ECDF, strategy-comparison, incremental-profit, sensitivity, and stability figures. Future planned experiments will use the same `chapter-NN` command convention.
