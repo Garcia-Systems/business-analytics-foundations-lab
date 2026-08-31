@@ -50,7 +50,7 @@ Python 3.12+ is the primary computational environment. R will be introduced deli
 
 21. **Samples Tell Stories — implemented**
 22. **Sampling Distributions — implemented**
-23. Estimation & Confidence
+23. **Estimation & Confidence — implemented**
 24. Hypothesis Testing
 25. Comparing Groups
 26. Regression as a Model
@@ -72,7 +72,7 @@ Python 3.12+ is the primary computational environment. R will be introduced deli
 
 ### Capstone — James River Analytics Challenge
 
-Chapters 23–35 and the capstone are **planned**. Part III is complete, and Part IV — Statistics: Learning From Samples has begun. The planned capstone will integrate business framing, data preparation, quantitative reasoning, computation, visualization, and communication in one coherent analytics challenge.
+Chapters 24–35 and the capstone are **planned**. Part III is complete, and Part IV — Statistics: Learning From Samples has begun. The planned capstone will integrate business framing, data preparation, quantitative reasoning, computation, visualization, and communication in one coherent analytics challenge.
 
 ## Repository layout
 
@@ -248,3 +248,9 @@ python3 -m analytics_foundations chapter-22
 The Chapter 0 experiment loads version-controlled data and writes
 `figures/chapter-00-revenue-by-date.png`. Chapter 1 writes separate revenue/cost and profit
 figures. Chapter 2 writes linear-versus-exponential and repeated-multiplication figures. Chapter 3 writes revenue-by-category and category-contribution figures. Chapter 4 writes average-rate, secant-to-tangent, and profit-versus-marginal-profit figures. Chapter 5 writes accumulation, Riemann-rectangle, refinement, trapezoid, Simpson, and signed-accumulation figures. Chapter 6 writes customer-point, distance, and feature-scale figures. Chapter 7 writes table-to-matrix and weighted-score figures. Chapter 8 writes unique, dependent, inconsistent-system, and least-squares figures. Chapter 9 writes revenue-matrix, location-total, and target-deviation figures. Chapter 10 writes category, location, and daily-revenue figures. Chapter 11 writes missingness, category-standardization, outlier-candidate, and raw-versus-cleaned reconciliation figures. Chapter 12 writes grain-transformation, revenue-and-labor, and revenue-per-labor-hour figures. Chapter 13 writes distribution, group-comparison, relationship, time, grain-comparison, promotion, and axis-skepticism figures. Chapter 14 writes demand-probability, event, complement, union, intersection, and simulation-convergence figures. Chapter 15 writes restricted-denominator, contingency-table, probability-tree, and Bayes-count figures. Chapter 16 writes outcome-mapping, PMF, CDF, simulation-versus-model, and continuous-preview figures. Chapter 17 writes Bernoulli and Binomial PMFs, Uniform and Normal density areas, Normal parameter comparisons, and theory-versus-simulation figures. Chapter 18 writes weighted-balance, same-mean risk, deviation, cumulative-mean, and empirical-variance figures. Chapter 19 writes paired-deviation, relationship, correlation-matrix, outlier-influence, and nonlinear-dependence figures. Chapter 20 writes simulation-pipeline, profit-distribution, ECDF, strategy-comparison, incremental-profit, sensitivity, and stability figures. Chapter 22 writes three-distribution, sampling-mean, sample-size, standard-error, CLT, and bias-versus-precision figures. Future planned experiments will use the same `chapter-NN` command convention.
+
+Chapter 23 combines point estimates and standard errors into confidence intervals and checks repeated-sampling coverage:
+
+```bash
+python3 -m analytics_foundations chapter-23
+```
