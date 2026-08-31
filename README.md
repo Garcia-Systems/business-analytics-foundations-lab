@@ -46,9 +46,9 @@ Python 3.12+ is the primary computational environment. R will be introduced deli
 19. **Covariance & Dependence — implemented**
 20. **Monte Carlo Business — implemented**
 
-### Part IV — Statistics: Learning From Samples
+### Part IV — Statistics: Learning From Samples — begun
 
-21. Samples Tell Stories
+21. **Samples Tell Stories — implemented**
 22. Sampling Distributions
 23. Estimation & Confidence
 24. Hypothesis Testing
@@ -72,7 +72,7 @@ Python 3.12+ is the primary computational environment. R will be introduced deli
 
 ### Capstone — James River Analytics Challenge
 
-Chapters 21–35 and the capstone are **planned**. Part III — Probability as a Model of Uncertainty is complete. The planned capstone will integrate business framing, data preparation, quantitative reasoning, computation, visualization, and communication in one coherent analytics challenge.
+Chapters 22–35 and the capstone are **planned**. Part III is complete, and Part IV — Statistics: Learning From Samples has begun. The planned capstone will integrate business framing, data preparation, quantitative reasoning, computation, visualization, and communication in one coherent analytics challenge.
 
 ## Repository layout
 
@@ -231,6 +231,12 @@ Chapter 20 combines uncertain restaurant demand, spending, conditional redemptio
 
 ```bash
 python3 -m analytics_foundations chapter-20
+```
+
+Chapter 21 reverses the direction of reasoning and uses restaurant wait-time samples to distinguish populations, parameters, statistics, random variation, and selection bias:
+
+```bash
+python3 -m analytics_foundations chapter-21
 ```
 
 The Chapter 0 experiment loads version-controlled data and writes
